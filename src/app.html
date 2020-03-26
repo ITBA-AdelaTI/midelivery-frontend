@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Awesome App!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div id="app">
+    <img alt="App logo" src="./assets/carrito.png">
+    <h1 class="text-center">Mis pedidos</h1>
+    <br>
+    <div class="container">
+        <section class="form">
+            <form action="">
+                <div class="form-row">
+                    <!-- Formulario producto-->
+                    <div class="col">
+                        <input class="form-control" placeholder="Comercio">
+                    </div>
+                    <div class="col">
+                        <input placeholder="Producto" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input placeholder="Cantidad" class="form-control">
+                    </div>
+                    <div class="col">
+                        <!-- Botón para añadir -->
+                        <input type="button" value="Add Order" class="btn btn-success">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <br>
+        <!-- Tabla donde se muestran los datos -->
+        <section class="data">
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Comercio</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio Unitario</th>
+                    <th scope="col">Precio Total</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>80000234</td>
+                    <td>La Farola de Urquiza</td>
+                    <td>Milanesa de Pollo Napolitana</td>
+                    <td>2</td>
+                    <td>$ 230</td>
+                    <td>$ 460</td>
+                    <td>
+                        <button class="btn btn-info">Actualizar</button>
+                        <button class="btn btn-danger">Borrar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>80000675</td>
+                    <td>La Farola de Urquiza</td>
+                    <td>Cerveza</td>
+                    <td>2</td>
+                    <td>$ 180</td>
+                    <td>$ 360</td>
+                    <td>
+                        <button class="btn btn-info">Actualizar</button>
+                        <button class="btn btn-danger">Borrar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>80000345</td>
+                    <td>El Imperio de la Pizza</td>
+                    <td>Pizza Fugazzeta</td>
+                    <td>1</td>
+                    <td>$ 230</td>
+                    <td>$ 230</td>
+                    <td>
+                        <button class="btn btn-info">Actualizar</button>
+                        <button class="btn btn-danger">Borrar</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</div>
+</body>
+</html>
