@@ -1,4 +1,4 @@
-# products-frontend
+# midelivery-frontend
 
 ## Project setup
 ```
