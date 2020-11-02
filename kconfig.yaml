@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: products-frontend-v1
+  name: midelivery-frontend-v1
   labels:
-    app: products-frontend
+    app: midelivery-frontend
     version: v1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: products-frontend
+      app: midelivery-frontend
       version: v1
   # Pod template
   template:
     metadata:
       labels:
-        app: products-frontend
+        app: midelivery-frontend
         version: v1
     spec:
       containers:
-        - name: itba-products-frontend
-          image: gbrey/products-frontend
+        - name: itba-midelivery-frontend
+          image: fcatinello/midelivery-frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -28,9 +28,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: products-frontend-svc
+  name: midelivery-frontend-svc
   labels:
-    app: products-frontend
+    app: midelivery-frontend
 spec:
   type: LoadBalancer
   ports:
@@ -39,4 +39,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-      app: products-frontend
+      app: midelivery-frontend
